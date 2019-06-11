@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nnenna.emergency.SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#071f8b"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="14dp"
+        android:text="SIGN UP"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_person_outline"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="First Name"
+                android:inputType="text"
+                android:maxLength="11"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_person_outline"
+                tools:ignore="TextFields"/>
+
+            <EditText
+                android:id="@+id/etSecondName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Second Name"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                tools:ignore="TextFields"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_mail_black_24dp"
+                tools:ignore="TextFields"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_phone_android"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_phone_android"
+                tools:ignore="TextFields"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/holo_red_dark"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Password"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                tools:ignore="TextFields"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btSign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/signup_btn"
+        android:textSize="18sp"
+        android:text="Sign Up"/>
+
+</LinearLayout>
