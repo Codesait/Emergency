@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 public class SignUp extends AppCompatActivity {
 
     private EditText et_email, et_password, et_Phone, et_firstName, et_secondName;
-    private Button btnSignIn, btnSignUp;
+    private Button  btnSignUp;
     private FirebaseAuth auth;
     private KProgressHUD hud;
     ProgressBar bar;
@@ -113,7 +113,7 @@ public class SignUp extends AppCompatActivity {
                                 progressDialog.dismiss();
                                 if (!task.isSuccessful()) {
                                     Toast.makeText(SignUp.this, "Authentication failed." + task.getException(),
-                                            Toast.LENGTH_SHORT).show();
+                                            Toast.LENGTH_LONG).show();
                                 } else {
 
                                     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

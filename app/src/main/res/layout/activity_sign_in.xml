@@ -24,6 +24,7 @@
 
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@android:color/holo_red_dark"
@@ -41,6 +42,7 @@
 
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@android:color/holo_red_dark"
@@ -60,6 +62,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -92,6 +95,7 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/btnRegPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -102,6 +106,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnForgotPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot password?"
