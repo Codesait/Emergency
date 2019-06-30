@@ -1,13 +1,15 @@
-package com.example.nnenna.emergency;
+package com.example.nnenna.emergency.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Dashboard extends AppCompatActivity {
+import com.example.nnenna.emergency.R;
+
+public class LandingPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_landing_page);
     }
 }

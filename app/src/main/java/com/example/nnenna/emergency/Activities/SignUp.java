@@ -1,4 +1,4 @@
-package com.example.nnenna.emergency;
+package com.example.nnenna.emergency.Activities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -15,11 +15,13 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.nnenna.emergency.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.kaopiz.kprogresshud.KProgressHUD;
 
 import java.util.regex.Pattern;
@@ -29,11 +31,13 @@ public class SignUp extends AppCompatActivity {
     private EditText et_email, et_password, et_Phone, et_firstName, et_secondName;
     private Button  btnSignUp;
     private FirebaseAuth auth;
+    private DatabaseReference usersRef;
     private KProgressHUD hud;
     ProgressBar bar;
     ProgressDialog progressDialog;
     String uId;
     private String firstName, lastName, email, phone, password;
+
 
 
     @Override

@@ -1,8 +1,10 @@
-package com.example.nnenna.emergency;
+package com.example.nnenna.emergency.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.nnenna.emergency.R;
 
 public class MainActivity extends AppCompatActivity {
 
